@@ -39,7 +39,7 @@ This is a comprehensive, full-stack Job Portal application built using the **MER
 
 ### Analytics & Profile Management
 * **Customer Analysis:** Features a dedicated section utilizing **Recharts** to display visual data representations (charts/graphs) using dummy data, simulating application and post performance tracking.
-* **Profile Management (Bonus):** The Profile section allows users to **update their personal details (Name, Email)** and **change their password**.
+* **Profile Management :** The Profile section allows users to **update their personal details (Name, Email)** and **change their password**.
 
 ***
 
@@ -58,7 +58,6 @@ This is a comprehensive, full-stack Job Portal application built using the **MER
 
 ## ⚙️ Local Setup and Installation
 
-Follow these steps to get a local copy of the project up and running.
 
 ### Prerequisites
 * Node.js (LTS version)
@@ -66,10 +65,8 @@ Follow these steps to get a local copy of the project up and running.
 * Git
 
 ### 1.  **Clone the Repository:**
-    ```bash
     git clone https://github.com/prathamesonar/Job-Portal.git
     cd Job-Portal
-    ```
     
 ### 2. Backend Setup (`Job-Portal/backend`)
 
@@ -107,7 +104,7 @@ Follow these steps to get a local copy of the project up and running.
     # Client runs on http://localhost:5173
     ```
 
-Access the client URL (`http://localhost:5173`) in your browser to begin testing.
+Access the client URL (`http://localhost:5173`) in your browser 
 
 ---
 
