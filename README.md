@@ -93,11 +93,8 @@ This is a comprehensive, full-stack Job Portal application built using the **MER
     cd ../frontend
     npm install
     ```
-2.  **Verify API URL:** Ensure the base API URL in `src/config/api.js` is set to the local backend address for development:
-    ```javascript
-    const API_BASE_URL = 'http://localhost:5000/api'; 
-    ```
-3.  **Start the Client:**
+
+2.  **Start the Client:**
     ```bash
     npm run dev
     ```
