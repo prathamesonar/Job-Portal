@@ -81,7 +81,7 @@ This is a comprehensive, full-stack Job Portal application built using the **MER
     MONGO_URI="YOUR_MONGODB_ATLAS_CONNECTION_STRING"
     JWT_SECRET="YOUR_STRONG_SECRET_KEY"
     ```
-3.  **Start the API:**
+3.  **Run the backend server:**
     ```bash
     npm run dev 
     ```
