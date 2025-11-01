@@ -75,7 +75,7 @@ This is a comprehensive, full-stack Job Portal application built using the **MER
     cd backend
     npm install
     ```
-2.  **Create `.env`:** Create a file named `.env` in the `backend` directory and add your secret keys (using your Atlas connection string):
+2.  **Create `.env`:** Create a file named `.env` in the `backend` directory :
     ```env
     PORT=5000
     MONGO_URI="YOUR_MONGODB_ATLAS_CONNECTION_STRING"
@@ -84,7 +84,6 @@ This is a comprehensive, full-stack Job Portal application built using the **MER
 3.  **Start the API:**
     ```bash
     npm run dev 
-    # API runs on http://localhost:5000
     ```
 
 ### 3. Frontend Setup (`Job-Portal/frontend`)
@@ -101,7 +100,6 @@ This is a comprehensive, full-stack Job Portal application built using the **MER
 3.  **Start the Client:**
     ```bash
     npm run dev
-    # Client runs on http://localhost:5173
     ```
 
 Access the client URL (`http://localhost:5173`) in your browser 
@@ -140,8 +138,6 @@ Job-Portal/
     │   │   ├── JobPostingForm.jsx   # Form for creating new jobs
     │   │   ├── Profile.jsx          # User details and password change component
     │   │   └── Sidebar.jsx          # Responsive dashboard navigation
-    │   ├── config/
-    │   │   └── api.js               # Centralized base API URL 
     │   ├── context/
     │   │   └── ThemeContext.jsx     #  Dark/Light theme toggling
     │   ├── pages/
