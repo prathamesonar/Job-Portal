@@ -2,14 +2,14 @@
 
 This is a comprehensive, full-stack Job Portal application built using the **MERN (MongoDB, Express, React, Node.js)** stack. It features robust user authentication with JWT, a fully responsive dashboard powered by **Tailwind CSS**, and essential job management tools including **Create, Read, Update, and Delete (CRUD)** operations.
 
-##  Live Demo and Deployment Links
+---
 
-| Component | Status | Platform | URL |
-| :--- | :--- | :--- | :--- |
-| **Frontend (Client)** | **Live** | **Vercel** | [**https://jobc-portaal.vercel.app**](https://jobc-portaal.vercel.app) |
-| **Backend (API)** | **Live** | **Render** | [**https://jobc-8hsk.onrender.com**](https://jobc-8hsk.onrender.com) |
+##  Live Demo
 
-***
+* **Frontend (Vercel):** [https://jobc-portaal.vercel.app](https://jobc-portaal.vercel.app)
+* **Backend (Render):** [https://jobc-8hsk.onrender.com](https://jobc-8hsk.onrender.com)
+
+---
 
 ## Key Features
 
@@ -35,7 +35,7 @@ This is a comprehensive, full-stack Job Portal application built using the **MER
     * Last Date for Application
     * Company Name
 * **Data Persistence:** Submitted job details are saved securely in **MongoDB**.
-* **Edit/Delete (Bonus):** Users can **edit** and **delete** their own posted job listings from the "Job Posted" section.
+* **Edit/Delete :** Users can **edit** and **delete** their own posted job listings from the "Job Posted" section.
 
 ### Analytics & Profile Management
 * **Customer Analysis:** Features a dedicated section utilizing **Recharts** to display visual data representations (charts/graphs) using dummy data, simulating application and post performance tracking.
@@ -102,3 +102,55 @@ Follow these steps to get a local copy of the project up and running.
     ```
 
 Access the client URL (`http://localhost:5173`) in your browser to begin testing.
+
+---
+
+## Project Structure
+
+```
+mern-job-portal/
+├── backend/
+│   ├── config/
+│   │   └── db.js                 # MongoDB connection setup
+│   ├── controllers/
+│   │   ├── jobController.js      # Logic for Job CRUD (Create, Read, Update, Delete)
+│   │   └── userController.js     # Logic for User Auth (Register, Login, Profile Update, Password Change)
+│   ├── middleware/
+│   │   └── authMiddleware.js     # JWT protection middleware
+│   ├── models/
+│   │   ├── Job.js                # Mongoose schema for Job Postings
+│   │   └── User.js               # Mongoose schema for Users (Recruiters)
+│   ├── routes/
+│   │   ├── jobRoutes.js          # API routes for /api/jobs (Protected)
+│   │   └── userRoutes.js         # API routes for /api/users (Auth, Profile)
+│   ├── utils/
+│   │   └── generateToken.js      # Utility for creating JWT
+│   ├── .env                      # Environment variables (MONGO_URI, JWT_SECRET)
+│   ├── package.json
+│   ├── server.js                 # Main Express server file (includes CORS config)
+│   └── .gitignore
+└── frontend/
+    ├── src/
+    │   ├── components/
+    │   │   ├── CustomerAnalysis.jsx # Dashboard charts (using Recharts)
+    │   │   ├── JobPosted.jsx        # Displays, Edits, and Deletes posted jobs
+    │   │   ├── JobPostingForm.jsx   # Form for creating new jobs
+    │   │   ├── Profile.jsx          # User details and password change component
+    │   │   └── Sidebar.jsx          # Responsive dashboard navigation
+    │   ├── config/
+    │   │   └── api.js               # Centralized base API URL 
+    │   ├── context/
+    │   │   └── ThemeContext.jsx     #  Dark/Light theme toggling
+    │   ├── pages/
+    │   │   ├── Dashboard.jsx        # Main layout, handles routing for sidebar views
+    │   │   ├── Login.jsx            # User login page
+    │   │   └── Register.jsx         # User registration page
+    │   ├── App.jsx                  # Main routing and ProtectedRoute logic
+    │   └── main.jsx                 # Entry point, wrapping App with ThemeProvider
+    ├── public/
+    ├── index.css                   # Tailwind CSS imports
+    ├── package.json
+    ├── postcss.config.js           # Tailwind/PostCSS configuration
+    ├── tailwind.config.js
+    └── .gitignore
+````
