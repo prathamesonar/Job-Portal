@@ -65,7 +65,13 @@ Follow these steps to get a local copy of the project up and running.
 * MongoDB Atlas account
 * Git
 
-### 1. Backend Setup (`mern-job-portal/backend`)
+### 1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/prathamesonar/Job-Portal.git
+    cd Job-Portal
+    ```
+    
+### 2. Backend Setup (`Job-Portal/backend`)
 
 1.  **Navigate and Install:**
     ```bash
@@ -84,7 +90,7 @@ Follow these steps to get a local copy of the project up and running.
     # API runs on http://localhost:5000
     ```
 
-### 2. Frontend Setup (`mern-job-portal/frontend`)
+### 3. Frontend Setup (`Job-Portal/frontend`)
 
 1.  **Navigate and Install:**
     ```bash
@@ -108,7 +114,7 @@ Access the client URL (`http://localhost:5173`) in your browser to begin testing
 ## Project Structure
 
 ```
-mern-job-portal/
+Job-Portal/
 ├── backend/
 │   ├── config/
 │   │   └── db.js                 # MongoDB connection setup
