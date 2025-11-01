@@ -11,7 +11,13 @@ connectDB();
 
 const app = express();
 
-app.use(cors()); 
+app.use(cors({
+    origin: '*', // CHANGE THIS to your Vercel Frontend URL in production
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true,
+})); 
+
+
 app.use(express.json()); 
 
 app.use('/api/users', userRoutes);
