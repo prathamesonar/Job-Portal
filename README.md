@@ -1,4 +1,4 @@
-# Job Portal - Full-Stack MERN Application
+# Job Portal - Full-Stack Application
 
 This is a comprehensive, full-stack Job Portal application built using the **MERN (MongoDB, Express, React, Node.js)** stack. It features robust user authentication with JWT, a fully responsive dashboard powered by **Tailwind CSS**, and essential job management tools including **Create, Read, Update, and Delete (CRUD)** operations.
 
